@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+  <title>Buttons</title>
+</head>
+<body">
+  <div class="container">
+    <div id="content" onClick="removeFocus()" ontouchstart="removeFocus()" ></div>
+    <button class="button btn-cancel" onClick="changeCss('msg-cancel')" ontouchstart="changeCss('msg-cancel')">Cancel</button>
+    <button class="button btn-accept" onClick="changeCss('msg-accept')" ontouchstart="changeCss('msg-accept')">Accept</button>
+    <div class="message" id="msg-accept">
+      <span>Thank you!</span>
+    </div>
+    <div class="message" id="msg-cancel">
+      <span>Come back soon!</span>
+    </div>
+  </div>
+</body>
+</html>

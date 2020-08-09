@@ -1,0 +1,63 @@
+body {
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.message {
+  width: 200px;
+  height: 200px;
+  border: 2px blue solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: -250px;
+  z-index: 10;
+  transition: all 2s ease-in-out;
+}
+.button {
+  padding: 20px 40px;
+  margin: 20px;
+  border: #555 solid 1px;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: large;
+  position: relative;
+  z-index: 10;
+}
+.btn-cancel {
+  background-color: brown;
+}
+.btn-accept {
+  background-color: green;
+}
+#btn-accept:hover {
+  background-color: rgb(53, 129, 5);
+}
+#btn-cancel:hover {
+  background-color: rgb(165, 77, 55);
+}
+.focus {
+  transform: translate(-500px, 0);
+}
+#content {
+  width: 99vw;
+  height: 99vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+button:disabled {
+  background-color: lightslategrey;
+  color: black;
+}
